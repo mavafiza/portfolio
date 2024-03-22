@@ -140,3 +140,23 @@ document.getElementById('downloadButton').addEventListener('click', function() {
   // Libera el elemento <a> temporal
   document.body.removeChild(link);
 });
+
+
+document.getElementById('downloadButtoncv').addEventListener('click', function() {
+  // URL del archivo PDF que se va a descargar
+  const pdfUrl = './assets/mavafiza.pdf';
+
+  // Nombre del archivo al descargar
+  const pdfFileName = 'mavafiza.pdf';
+
+  // Crea un elemento <a> temporal
+  const link = document.createElement('a');
+  link.href = pdfUrl;
+  link.download = pdfFileName;
+
+  // Simula un clic en el enlace para iniciar la descarga
+  link.click();
+
+  // Libera el elemento <a> temporal
+  document.body.removeChild(link);
+});
