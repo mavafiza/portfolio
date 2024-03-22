@@ -1,13 +1,13 @@
 /* ----- NAVIGATION BAR FUNCTION ----- */
-// function myMenuFunction() {
-//   let menuBtn = document.getElementById("myNavMenu");
+function myMenuFunction() {
+  let menuBtn = document.getElementById("myNavMenu");
 
-//   if (menuBtn.className === "nav-menu") {
-//     menuBtn.className += " responsive";
-//   } else {
-//     menuBtn.className = "nav-menu";
-//   }
-// }
+  if (menuBtn.className === "nav-menu") {
+    menuBtn.className += " responsive";
+  } else {
+    menuBtn.className = "nav-menu";
+  }
+}
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function () { headerShadow() };

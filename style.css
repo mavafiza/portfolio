@@ -474,6 +474,8 @@ h3 {
     border-radius: 20px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     overflow: hidden;
+    text-align: center;
+
 }
 
 .project-box>i {
@@ -749,6 +751,11 @@ footer {
         width: 100%;
     }
 
+    .flex-wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .scroll-icon-box {
         display: none;
     }
@@ -783,11 +790,28 @@ footer {
         width: 100%;
     }
 
+    .items-center {
+        justify-content: center;
+        gap: 27px;
+
+    }
+
+    .skills-header h3 {
+        text-align: center;
+    }
+
     .form-inputs {
         flex-direction: column;
     }
 
     .input-field {
         width: 100%;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1px;
     }
 }
