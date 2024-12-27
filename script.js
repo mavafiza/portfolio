@@ -9,6 +9,22 @@ function myMenuFunction() {
   }
 }
 
+
+/* ----- CLOSE MENU IN RESPONSIVE ----- */
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    let menuBtn = document.getElementById("myNavMenu");
+
+
+    if (menuBtn.className.includes("responsive")) {
+      menuBtn.className = "nav-menu";
+    }
+  });
+});
+
+
+
+
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function () { headerShadow() };
 
